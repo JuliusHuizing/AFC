@@ -46,14 +46,13 @@ Let's consider the following todo's, unless you have better idea's (feel free to
 - [x] Extract prophet model declaration from AFCS.ipynb
 - [x] Evaluate prophet model in dedicated notebook (extract evaluation logic from AFCS.ipynb)
 
-- [ ] Extract arima model declaration from AFCS.ipynb
-- [ ] Evaluate arima model in dedicated notebook (extract evaluation logic from AFCS.ipynb)
+- [X] Extract arima model declaration from AFCS.ipynb
+- [X] Evaluate arima model in dedicated notebook (extract evaluation logic from AFCS.ipynb)
 
-- [ ]  Extract TBATS model declaration from AFCS.ipynb
-- [ ] Evaluate TBATS model in dedicated notebook (extract evaluation logic from AFCS.ipynb)
+- [X] Extract TBATS model declaration from AFCS.ipynb
+- [X] Evaluate TBATS model in dedicated notebook (extract evaluation logic from AFCS.ipynb)
 
-- [ ] Extract Exploratoray Data Analysis from AFCS.ipynb and make plots in separate notebook.
-- [ ] Try out more models (with dedicated .py and .ipynb files for model declarations and perfomance evaluationr respectively)
+
 
 
 # TODO: report
@@ -67,14 +66,19 @@ Let's consider the following todo's, unless you have better idea's (feel free to
 
 
 ## Results section:
-ARIMA
-- [ ] RMSE
-- [x] Parameter TABLE
 
-TBATS
+- [X] Add figure for comparing forecasts on held-out test set
+  
+
+ARIMA:
+- [ ] RMSE
+- [X] Parameter TABLE
+
+TBATS:
 - [x] RMSE
-- [x] Parameter TABLE
+- [X] Parameter TABLE
 
-PROPHET
+PROPHET:
 - [ ] RMSE
-- [ ] Parameter TABLE
+- [X] Parameter TABLE
+
