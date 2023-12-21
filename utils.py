@@ -1,5 +1,8 @@
 import pandas as pd
 
+import numpy as np
+
+# 
 class Data:
     def __init__(self):
         self.load_datasets()
@@ -11,6 +14,7 @@ class Data:
         self.merge_calendar_and_sell_prices()
         self.merge_sales_and_sell_prices()
         self.process_holidays()
+        self.create_daily_sales_df()
 
     def load_datasets(self):
         """Load all datasets from CSV files."""
@@ -64,8 +68,36 @@ class Data:
         events_df['date'] = pd.to_datetime(events_df['date'])
         self.holidays_df = events_df[events_df['holiday'] != ''][['date', 'holiday']]
         self.holidays_df.columns = ['ds', 'holiday']
+        
+    def create_daily_sales_df(self):
+        self.sales_test_long = pd.melt(self.sales_test, id_vars=['id'],
+        var_name='day', value_name='sales')
+        self.sales_test_long['day'] = pd.to_datetime('2011-01-29') + pd.to_timedelta(self.sales_test_long['day'].str[2:].astype(int) - 1, unit='D')
+        self.calendar['date'] = pd.to_datetime(self.calendar['date'])
+        self.merged_test_data = pd.merge(self.sales_test_long, self.calendar, left_on='day', right_on='date', how='left')
+        self.daily_sales_test = self.merged_test_data.groupby('day')['sales'].sum()
 
 
 
 
+
+import os
+import pickle
+
+# Function to extract timestamp from filename
+def get_timestamp(filename):
+    try:
+        return int(filename.split("_")[-1].split(".")[0])
+    except:
+        return 
+
+def get_most_recent_pickle_that_starts_with(prefix, directory) -> str:
+    # Get a list of pickle files that start with the given prefix in the given directory
+    pickle_files = [file for file in os.listdir(directory) if file.endswith(".pkl") and file.startswith(prefix)]
+    # Find the most recent pickle file
+    if pickle_files:
+        latest_pickle_file = max(pickle_files, key=get_timestamp)
+        return latest_pickle_file
+    
+        # Read the data from the most recent pickle file
 
