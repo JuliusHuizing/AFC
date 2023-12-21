@@ -1,6 +1,7 @@
 import pandas as pd
-
 import numpy as np
+import os
+import pickle
 
 # 
 class Data:
@@ -77,12 +78,6 @@ class Data:
         self.merged_test_data = pd.merge(self.sales_test_long, self.calendar, left_on='day', right_on='date', how='left')
         self.daily_sales_test = self.merged_test_data.groupby('day')['sales'].sum()
 
-
-
-
-
-import os
-import pickle
 
 # Function to extract timestamp from filename
 def get_timestamp(filename):
