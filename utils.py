@@ -90,9 +90,12 @@ def get_most_recent_pickle_that_starts_with(prefix, directory) -> str:
     # Get a list of pickle files that start with the given prefix in the given directory
     pickle_files = [file for file in os.listdir(directory) if file.endswith(".pkl") and file.startswith(prefix)]
     # Find the most recent pickle file
-    if pickle_files:
-        latest_pickle_file = max(pickle_files, key=get_timestamp)
-        return latest_pickle_file
+    try: 
+        if pickle_files:
+            latest_pickle_file = max(pickle_files, key=get_timestamp)
+            return latest_pickle_file
+    except:
+        return
     
         # Read the data from the most recent pickle file
 
