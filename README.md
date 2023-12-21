@@ -64,3 +64,18 @@ Let's consider the following todo's, unless you have better idea's (feel free to
 - [ ] Finish results, conclusion, discussion.
 - [ ] Write abstract.
 - [ ] deeper analysis.
+
+
+
+## Results section:
+ARIMA
+- [ ] RMSE
+- [x] Parameter TABLE
+
+TBATS
+- [ ] RMSE
+- [ ] Parameter TABLE
+
+PROPHET
+- [ ] RMSE
+- [ ] Parameter TABLE
