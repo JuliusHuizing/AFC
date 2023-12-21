@@ -49,8 +49,8 @@ Let's consider the following todo's, unless you have better idea's (feel free to
 - [ ] Extract arima model declaration from AFCS.ipynb
 - [ ] Evaluate arima model in dedicated notebook (extract evaluation logic from AFCS.ipynb)
 
-- [ ]  Extract TBat model declaration from AFCS.ipynb
-- [ ] Evaluate TBAt modelin dedicated notebook (extract evaluation logic from AFCS.ipynb)
+- [ ]  Extract TBATS model declaration from AFCS.ipynb
+- [ ] Evaluate TBATS model in dedicated notebook (extract evaluation logic from AFCS.ipynb)
 
 - [ ] Extract Exploratoray Data Analysis from AFCS.ipynb and make plots in separate notebook.
 - [ ] Try out more models (with dedicated .py and .ipynb files for model declarations and perfomance evaluationr respectively)
@@ -59,8 +59,8 @@ Let's consider the following todo's, unless you have better idea's (feel free to
 # TODO: report
 
 - [ ] Write a max 12 pages, ACM (association for Computing Machinery) style report about all of the above, and submit to canvas.
-- [ ] State in report the we use RMSE to comapare models
-- [ ] Create Tabel comparing the RMSE's of the models
-- [ ] Finish rsults, conclusion, discussion
-- [ ] Write abstract
-- [ ] deeper analysis
+- [ ] State in report the we use RMSE to comapare models.
+- [ ] Create Tabel comparing the RMSE's of the models.
+- [ ] Finish results, conclusion, discussion.
+- [ ] Write abstract.
+- [ ] deeper analysis.
