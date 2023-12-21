@@ -59,12 +59,11 @@ Let's consider the following todo's, unless you have better idea's (feel free to
 # TODO: report
 
 - [ ] Write a max 12 pages, ACM (association for Computing Machinery) style report about all of the above, and submit to canvas.
+- [ ] Add section on the dataset
 - [ ] State in report the we use RMSE to comapare models.
-- [ ] Create Tabel comparing the RMSE's of the models.
 - [ ] Finish results, conclusion, discussion.
 - [ ] Write abstract.
 - [ ] deeper analysis.
-
 
 
 ## Results section:
@@ -73,8 +72,8 @@ ARIMA
 - [x] Parameter TABLE
 
 TBATS
-- [ ] RMSE
-- [ ] Parameter TABLE
+- [x] RMSE
+- [x] Parameter TABLE
 
 PROPHET
 - [ ] RMSE
