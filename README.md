@@ -61,7 +61,7 @@ Let's consider the following todo's, unless you have better idea's (feel free to
 - [ ] Add section on the dataset
 - [ ] State in report the we use RMSE to comapare models.
 - [ ] Finish results, conclusion, discussion.
-- [ ] Write abstract.
+- [X] Write abstract.
 - [ ] deeper analysis.
 
 
