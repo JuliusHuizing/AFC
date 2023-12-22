@@ -71,7 +71,7 @@ Let's consider the following todo's, unless you have better idea's (feel free to
   
 
 ARIMA:
-- [ ] RMSE
+- [X] RMSE
 - [X] Parameter TABLE
 
 TBATS:
@@ -79,6 +79,6 @@ TBATS:
 - [X] Parameter TABLE
 
 PROPHET:
-- [ ] RMSE
+- [X] RMSE
 - [X] Parameter TABLE
 
